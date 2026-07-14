@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Noether Nova | Mentoría Académica · Toluca</title>
+  <link rel="icon" href="img/logo mejorado.jpg" type="image/jpeg">
+  <meta name="description"
+    content="Mentoría académica en Toluca. Preparación para Preparatoria y Universidad. Grupos reducidos, atención personalizada y resultados reales. $350/hr." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- CANVAS FOR STARS -->
+  <canvas id="starsCanvas"></canvas>
+
+  <!-- NAV -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#" class="logo">
+        <img src="img/logo mejorado.jpg" alt="Logo Noether Nova" />
+        <span>Noether <em>Nova</em></span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#niveles">Programas</a></li>
+        <li><a href="#metodologia">Metodología</a></li>
+        <li><a href="#diferenciadores">¿Por qué nosotros?</a></li>
+        <li><a href="#registro">Registro</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+        <li><a href="./reseña.html">Reseñas</a></li>
+        <a href="#registro" class="btn-regresar">
+          Inscripciones
+        </a>
+      </ul>
+
+      <button class="hamburger" id="hamburger" aria-label="Menú"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero" id="inicio">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <span class="hero-tag">◈ Mentoría Académica · Toluca</span>
+      <h1>Bienvenidas y bienvenidos a<br /><em>Noether Nova</em></h1>
+      <p>Fomentamos una comprensión profunda orientada al desarrollo de un pensamiento lógico-matemático, crítico y
+        estructurado para enfrentar cualquier desafío.</p>
+      <div class="hero-btns">
+        <a href="#registro" class="btn-primary">Agenda tu evaluación diagnóstica 📲</a>
+        <a href="#niveles" class="btn-ghost">Ver programas</a>
+      </div>
+    </div>
+    <div class="hero-scroll"><span></span></div>
+  </header>
+
+  <!-- STATS -->
+  <section class="stats-band">
+    <div class="stat"><strong>Preparatoria</strong><span>Enfoque matemático</span></div>
+    <div class="stat-sep"></div>
+    <div class="stat"><strong>3 hrs</strong><span>Por sesión estratégica</span></div>
+    <div class="stat-sep"></div>
+    <div class="stat"><strong>Toluca</strong><span>Ubicación céntrica</span></div>
+  </section>
+
+  <!-- NIVELES CON TABS -->
+  <section class="section" id="niveles">
+    <div class="section-header">
+      <span class="section-tag">◈ Nos enfocamos en</span>
+      <h2>Programas de Preparatoria</h2>
+      <p>Programas diseñados por nivel con metodología de bloques progresivos.</p>
+    </div>
+
+    <!-- TABS -->
+    <div class="tabs-wrap">
+      <button class="tab-btn active" data-tab="cursoa">Curso A</button>
+      <button class="tab-btn" data-tab="cursob">Curso B</button>
+    </div>
+
+    <!-- CURSO A -->
+    <div class="tab-panel active" id="panel-cursoa">
+      <div class="curso-card" data-anim>
+        <div class="curso-header curso-header--a">
+          <span class="curso-badge">CURSO A</span>
+          <h3>Matemáticas para Ingreso a Ingeniería y Áreas Afines</h3>
+        </div>
+        <div class="curso-body">
+          <div class="curso-cols">
+            <div class="curso-materias">
+              <h4>📚 Materias</h4>
+              <ul class="area-list">
+                <li>🔢 Pensamiento Matemático</li>
+                <li>∫ Cálculo Integral</li>
+                <li>📉 Cálculo Diferencial</li>
+                <li>🧠 Pensamiento Lógico</li>
+              </ul>
+            </div>
+            <div class="curso-info">
+              <h4>📋 Detalles del curso</h4>
+              <div class="curso-detail-grid">
+                <div class="curso-detail-item">
+                  <span class="curso-detail-icon">⏳</span>
+                  <div><strong>Duración</strong>
+                    <p>6 meses</p>
+                  </div>
+                </div>
+                <div class="curso-detail-item">
+                  <span class="curso-detail-icon">📅</span>
+                  <div><strong>Inicio</strong>
+                    <p>Septiembre 2026</p>
+                  </div>
+                </div>
+                <div class="curso-detail-item">
+                  <span class="curso-detail-icon">🗓️</span>
+                  <div><strong>Clases</strong>
+                    <p>Miércoles y Viernes</p>
+                  </div>
+                </div>
+                <div class="curso-detail-item">
+                  <span class="curso-detail-icon">🕒</span>
+                  <div><strong>Horario</strong>
+                    <p>3:00 pm – 5:00 pm</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="curso-precios">
+            <h4>💳 Inversión</h4>
+            <div class="precio-cards">
+              <div class="precio-card precio-card--gold">
+                <span class="precio-card-icon">💵</span>
+                <strong>Débito / Efectivo<br>Un solo pago</strong>
+                <div class="precio-monto">$7,800</div>
+              </div>
+              <div class="precio-card precio-card--blue">
+                <span class="precio-card-icon">💳</span>
+                <strong>Tarjeta de Crédito</strong>
+                <div class="precio-monto">$8,100</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="curso-cta">
+            <a href="#registro" class="btn-primary">Asegurar mi lugar →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CURSO B -->
+    <div class="tab-panel" id="panel-cursob">
+      <div class="curso-card" data-anim>
+        <div class="curso-header curso-header--b">
+          <span class="curso-badge">CURSO B</span>
+          <h3>General a Diferentes Carreras / Licenciaturas Universidad</h3>
+        </div>
+        <div class="curso-body">
+          <div class="curso-cols">
+            <div class="curso-materias">
+              <h4>📚 Materias</h4>
+              <ul class="area-list">
+                <li>🔢 Pensamiento Matemático</li>
+                <li>🧠 Pensamiento Lógico</li>
+                <li>📖 Comprensión Lectora</li>
+                <li>✍️ Redacción Indirecta</li>
+              </ul>
+            </div>
+            <div class="curso-info">
+              <h4>📋 Detalles del curso</h4>
+              <div class="curso-detail-grid">
+                <div class="curso-detail-item">
+                  <span class="curso-detail-icon">⏳</span>
+                  <div><strong>Duración</strong>
+                    <p>6 meses</p>
+                  </div>
+                </div>
+                <div class="curso-detail-item">
+                  <span class="curso-detail-icon">📅</span>
+                  <div><strong>Inicio</strong>
+                    <p>Septiembre 2026</p>
+                  </div>
+                </div>
+                <div class="curso-detail-item">
+                  <span class="curso-detail-icon">🗓️</span>
+                  <div><strong>Clases</strong>
+                    <p>Jueves y Viernes</p>
+                  </div>
+                </div>
+                <div class="curso-detail-item">
+                  <span class="curso-detail-icon">🕒</span>
+                  <div><strong>Horario</strong>
+                    <p>3:00 pm – 5:00 pm</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="curso-precios">
+            <h4>💳 Inversión</h4>
+            <div class="precio-cards">
+              <div class="precio-card precio-card--gold">
+                <span class="precio-card-icon">💵</span>
+                <strong>Débito / Efectivo<br>Un solo pago</strong>
+                <div class="precio-monto">$9,000</div>
+              </div>
+              <div class="precio-card precio-card--blue">
+                <span class="precio-card-icon">💳</span>
+                <strong>Tarjeta de Crédito</strong>
+                <div class="precio-monto">$9,500</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="curso-cta">
+            <a href="#registro" class="btn-primary">Asegurar mi lugar →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- METODOLOGÍA VISUAL -->
+  <section class="section section--navy" id="metodologia">
+    <div class="section-header section-header--light">
+      <span class="section-tag">◈ Nuestro proceso</span>
+      <h2>¿Cómo trabajamos?</h2>
+      <p>Un proceso claro, progresivo y orientado a resultados reales.</p>
+    </div>
+    <div class="steps-grid">
+      <div class="step-card" data-anim>
+        <div class="step-num">01</div>
+        <h3>Diagnóstico inicial</h3>
+        <p>Evaluamos el nivel del alumno, identificamos debilidades específicas y diseñamos un plan personalizado.</p>
+      </div>
+      <div class="step-card" data-anim>
+        <div class="step-num">02</div>
+        <h3>Bloques de aprendizaje</h3>
+        <p>Los contenidos se trabajan por bloques. El alumno avanza solo cuando comprende cada etapa.</p>
+      </div>
+      <div class="step-card" data-anim>
+        <div class="step-num">03</div>
+        <h3>Sesiones de 3 horas</h3>
+        <p>Sesiones estructuradas estratégicamente con pausas activas que favorecen concentración y consolidación.</p>
+      </div>
+      <div class="step-card" data-anim>
+        <div class="step-num">04</div>
+        <h3>Seguimiento continuo</h3>
+        <p>Monitoreo del progreso en cada bloque. El alumno, el mentor y la familia están siempre informados.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- DIFERENCIADORES -->
+  <section class="section" id="diferenciadores">
+    <div class="section-header">
+      <span class="section-tag">◈ Lo que nos hace únicos</span>
+      <h2>¿Qué hace diferente a Noether Nova?</h2>
+      <p>No es regularización. Es desarrollo académico real.</p>
+    </div>
+    <div class="dif-grid">
+      <div class="dif-card" data-anim>
+        <div class="dif-img"><img src="./img/grupo.jpg" alt="Grupos reducidos" /></div>
+        <div class="dif-body">
+          <span class="dif-check">✔️</span>
+          <h3>Grupos reducidos</h3>
+          <p>Cupo limitado para garantizar atención de calidad.</p>
+        </div>
+      </div>
+      <div class="dif-card" data-anim>
+        <div class="dif-img"><img src="./img/analisamos_aprendisaje.jpg" alt="Diagnóstico inicial" /></div>
+        <div class="dif-body">
+          <span class="dif-check">✔️</span>
+          <h3>Diagnóstico inicial</h3>
+          <p>Se identifican debilidades específicas y se trabaja directamente sobre ellas.</p>
+        </div>
+      </div>
+      <div class="dif-card" data-anim>
+        <div class="dif-img"><img src="./img/resultadosReales.jpg" alt="Resultados reales" /></div>
+        <div class="dif-body">
+          <span class="dif-check">✔️</span>
+          <h3>Resultados reales</h3>
+          <p>Comprensión profunda, lógica desarrollada y confianza académica comprobable.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="dif-extras" data-anim>
+      <div class="extra-item"><span>✔️</span> Atención personalizada</div>
+      <div class="extra-item"><span>✔️</span> Seguimiento continuo</div>
+      <div class="extra-item"><span>📍</span> Ubicación céntrica en Toluca</div>
+      <div class="extra-item"><span>⏱️</span> Sesiones de 3 horas con pausas activas</div>
+      <!-- <div class="extra-item price-item"><span>💰</span> $350/hr Preparatoria</div> -->
+      <div class="extra-item warn-item"><span>⚠️</span> Cupo limitado</div>
+    </div>
+
+    <div class="quote-banner" data-anim>
+      ✨ No es regularización. Es desarrollo académico real. ✨
+    </div>
+  </section>
+
+  <!-- REGISTRO -->
+  <section class="section section--cta" id="registro">
+    <div class="reservar-inner">
+      <div class="reservar-text center-text">
+        <span class="section-tag">◈ Asegura tu lugar</span>
+        <h2>Inscripciones Abiertas</h2>
+        <p>Envíanos un mensaje por WhatsApp para agendar tu evaluación diagnóstica. Nuestro proceso de inscripción está
+          sujeto a disponibilidad.</p>
+        <ul class="reservar-perks inline-perks">
+          <li>◈ Evaluación diagnóstica personalizada</li>
+          <li>◈ Plan de acción estratégico</li>
+          <li>◈ Confirmación y horarios por WhatsApp</li>
+        </ul>
+        <a href="https://wa.me/522205954703?text=Hola%20Noether%20Nova%2C%20quiero%20agendar%20mi%20evaluaci%C3%B3n%20diagn%C3%B3stica"
+          class="btn-wa" target="_blank">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+            <path
+              d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
+            <path
+              d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.118 1.528 5.845L0 24l6.335-1.505A11.95 11.95 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.808 9.808 0 0 1-5.002-1.369l-.359-.213-3.722.885.916-3.617-.234-.372A9.808 9.808 0 0 1 2.182 12C2.182 6.57 6.57 2.182 12 2.182c5.431 0 9.818 4.388 9.818 9.818 0 5.431-4.387 9.818-9.818 9.818z" />
+          </svg>
+          Contactar por WhatsApp
+        </a>
+
+        <div class="metodos-pago">
+          <span class="metodos-pago-label">💳 Métodos de pago aceptados</span>
+          <div class="metodos-pago-img-wrap">
+            <img src="img/pago.avif" alt="Métodos de pago" class="metodos-pago-img" />
+          </div>
+          <span class="metodos-pago-label">POR EL MOMENTO LOS PAGOS SOLO SON PRESENCIALES :) </span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INSTALACIONES -->
+  <section class="section section--soft" id="instalaciones">
+    <div class="section-header">
+      <span class="section-tag">◈ Conócenos</span>
+      <h2>Nuestras Instalaciones</h2>
+      <p>Un espacio diseñado para la concentración, la comodidad y el desarrollo académico óptimo.</p>
+    </div>
+    <div class="inst-single">
+      <div class="inst-img-wrapper" data-anim>
+        <img src="img/lugar de asesoria.jpg" alt="Instalaciones Noether Nova" />
+        <div class="inst-caption">Nuestras Aulas de Mentoría</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO Y MAPA -->
+  <section class="section section--dark" id="contacto">
+    <div class="contacto-grid">
+      <div class="contacto-info">
+        <span class="section-tag">◈ Visítanos</span>
+        <h2>Contacto</h2>
+        <div class="info-item">
+          <span class="info-icon">📍</span>
+          <div><strong>Ubicación</strong>
+            <p>Felipe Villanueva 700, Morelos Primera Secc,<br />50120 Toluca de Lerdo, Méx.<br /><em>(BonanZa
+                Corporativo)</em></p>
+          </div>
+        </div>
+        <div class="info-item">
+          <span class="info-icon">📞</span>
+          <div><strong>WhatsApp / Teléfono</strong>
+            <p>+52 220 595 4703</p>
+          </div>
+        </div>
+        <div class="info-item">
+          <span class="info-icon">⏱️</span>
+          <div><strong>Sesiones</strong>
+            <p>3 horas · Bloques progresivos<br />Horarios flexibles</p>
+          </div>
+        </div>
+        <div class="info-item">
+          <span class="info-icon">💰</span>
+          <div><strong>Inversión</strong>
+            <p>$350 / hora — Preparatoria</p>
+          </div>
+        </div>
+        <div class="social-links">
+          <a href="https://wa.me/522205954703" class="social-btn" target="_blank">💬 WhatsApp</a>
+          <a href="https://maps.app.goo.gl/WwSaxDJcxLnqQvec6" class="social-btn" target="_blank">🗺️ Ver en Maps</a>
+        </div>
+      </div>
+      <div class="contacto-map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.5!2d-99.6655291!3d19.2811179!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cd8900926143ff%3A0x9de38edbd9b6b082!2sBonanZa%20Corporativo!5e0!3m2!1ses!2smx!4v1"
+          width="100%" height="100%" style="border:0;border-radius:1rem;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <img src="img/logo mejorado.jpg" alt="Logo Noether Nova" />
+          <span class="footer-name">Noether <em>Nova</em></span>
+        </div>
+        <p>Mentoría académica en Toluca. Pensamiento lógico, crítico y estructurado para enfrentar cualquier desafío.
+        </p>
+      </div>
+      <div class="footer-links">
+        <strong>Programas</strong>
+        <a href="#niveles">Curso A</a>
+        <a href="#niveles">Curso B</a>
+        <a href="#metodologia">Metodología</a>
+      </div>
+      <div class="footer-links">
+        <strong>Noether Nova</strong>
+        <a href="#diferenciadores">¿Por qué nosotros?</a>
+        <a href="#registro">Registro</a>
+        <a href="#contacto">Contacto</a>
+      </div>
+      <div class="footer-cta">
+        <strong>¿Listo para empezar?</strong>
+        <a href="#registro" class="btn-footer">Evaluación diagnóstica →</a>
+        <p class="footer-small">✨ No es regularización. Es desarrollo académico real. ✨</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-copy">© 2026 Noether Nova · Toluca, Méx. Todos los derechos reservados.</div>
+      <div class="footer-copy">Diseño y desarrollo web por <strong>Create Website</strong></div>
+    </div>
+  </footer>
+
+  <!-- FLOAT WA -->
+  <a href="https://wa.me/522205954703?text=Hola%20Noether%20Nova%2C%20quiero%20informes%20sobre%20la%20mentor%C3%ADa"
+    class="wa-float" target="_blank">
+    <svg viewBox="0 0 32 32" fill="none">
+      <circle cx="16" cy="16" r="16" fill="#25D366" />
+      <path
+        d="M23.5 8.5A10.45 10.45 0 0 0 16 5.5C10.2 5.5 5.5 10.2 5.5 16c0 1.85.48 3.65 1.4 5.23L5.5 26.5l5.4-1.37A10.47 10.47 0 0 0 16 26.5c5.8 0 10.5-4.7 10.5-10.5 0-2.8-1.09-5.43-3-7.5zm-7.5 16.15c-1.57 0-3.1-.42-4.44-1.22l-.32-.19-3.2.81.84-3.1-.2-.33A8.7 8.7 0 0 1 7.3 16c0-4.8 3.91-8.7 8.7-8.7 2.32 0 4.5.9 6.14 2.54A8.64 8.64 0 0 1 24.7 16c0 4.8-3.9 8.65-8.7 8.65zm4.76-6.5c-.26-.13-1.54-.76-1.78-.84-.24-.09-.41-.13-.58.13-.17.26-.65.84-.8 1.01-.14.17-.29.2-.55.07-.26-.13-1.1-.41-2.1-1.3-.78-.7-1.3-1.56-1.45-1.82-.15-.26-.02-.4.11-.53.12-.12.26-.3.39-.46.13-.16.17-.26.26-.43.09-.17.04-.32-.02-.45-.07-.13-.58-1.4-.8-1.92-.21-.5-.43-.43-.58-.44h-.5c-.17 0-.45.06-.69.3-.24.26-.9.88-.9 2.14s.92 2.48 1.05 2.65c.13.17 1.8 2.75 4.36 3.86.61.26 1.08.42 1.45.54.61.19 1.17.16 1.6.1.49-.07 1.5-.61 1.72-1.2.21-.58.21-1.08.14-1.19-.06-.1-.23-.16-.49-.29z"
+        fill="white" />
+    </svg>
+  </a>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
